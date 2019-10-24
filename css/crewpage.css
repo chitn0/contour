@@ -1,0 +1,40 @@
+/* -------------------------------------------------------------------------------------------
+									 Crew Page Media Query
+------------------------------------------------------------------------------------------- */
+/* Hide on Bigger Screens */
+@media only screen
+  and (min-width: 667px) {
+  #crewmobile, #crewmobilep { display: none !important; }   /* hide it elsewhere */
+}
+
+/* Show on Bigger Screens */
+@media only screen
+  and (min-width: 667px) {
+  #crewmq { display: block !important; }  
+}
+
+/* Hide on Small Screens */
+@media only screen
+  and (min-width: 320px)
+  and (max-width: 667px) {
+  #crewmq { display: none !important; }   /* hide it elsewhere */
+}
+
+/* Show on Small Screens Landscape */
+@media only screen
+  and (min-width: 320px)
+  and (max-width: 667px)
+  and (orientation: landscape) {
+  #crewmobile { display: block !important; }  /* show it on small screens */
+  #crewmobilep { display: none !important; }  /*Hide portrait version*/
+}
+
+
+/* Show on Small Screens Portrait */
+@media only screen
+  and (min-width: 320px)
+  and (max-width: 667px)
+  and (orientation: portrait) {
+  #crewmobilep { display: block !important; }  /* show it on small screens */
+  #crewmobile { display: none !important; }  /*Hide landscape version*/
+}

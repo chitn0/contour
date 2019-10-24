@@ -1,0 +1,24 @@
+.columns {
+    padding-left: 1%; }
+h2.ask {
+  padding-left :1%;
+}
+.message {
+  height: 186px;
+}
+.footer {
+  background-color: #ccc;
+  width:100%;
+  position:absolute;
+  /*bottom:0;*/
+  left:0;
+}
+.footercontactus {
+  background-color: #ccc;
+  width:100%;
+  position:absolute;
+  bottom:0;
+  left:0;
+}
+
+

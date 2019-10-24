@@ -1,0 +1,230 @@
+/* =======================
+  Product Page Stylesheet
+   ===================== */
+body {
+    font-family: Verdana, 'Lucida Grande';
+    font-size: 13px;
+}
+a {
+    text-decoration: none;
+    color:#333;
+}
+/* ======================= 
+    Product Dropdown Menu 
+   ===================== */
+#product-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index:1;
+}
+#products {
+    font-family: Verdana;
+    /*    position: fixed;    */
+    /*    top: 53px;*/
+    width: 100%;
+    height: 33px;
+    background: #fdfdfd;
+    font-size: 0;
+    border-bottom: 1px solid #dcdcdd;
+    /*    border-top: 1px solid #dcdcdd;*/
+    text-shadow: #dcdcdd 1px 1px 0;
+    z-index: 1;
+}
+#products > ul {
+    position: relative;
+    list-style: none;
+    width: 1000px;
+    height: 33px;
+    margin: 0 auto;
+    padding: 0;
+    white-space: normal;
+    font-size: 0;
+}
+#products > ul > li,
+#products > ul > li {
+    display: inline-block;
+    zoom: 1;
+    vertical-align: top;
+    white-space: nowrap;
+    font-size: 12px;
+}
+#products > ul > li > a {
+    display: block;
+    z-index: 2;
+    text-decoration: none;
+    padding: 0 8px;
+    border-right: 1px solid transparent;
+    border-left: 1px solid transparent;
+    font-size: 12px;
+    color: #777;
+    height: 33px;
+    line-height: 35px;
+    text-shadow: none;
+    overflow: hidden;
+    background: #fdfdfd;
+    position: relative;
+}
+#products > ul > li:hover > a {
+    background: url("../Images/product/resource/link-hover.png") repeat-x right 50% transparent;
+    color: #494949;
+    border-color: #dcdcdd;
+    height: 34px;
+}
+/* ======================= 
+    Product Page Sidebar 
+   ===================== */
+
+/*.sidebar h2 {
+    border-left: 3px solid #75890c;
+    padding: 0 15px;
+    margin: 10px 0;
+    font-family: 'Open Sans';
+    font-size: 22px;
+    line-height: normal;
+}
+.sidebar-block {
+    border: 1px solid #d6d6d6;
+    border-radius: 2px;
+    padding: 0;
+    margin-bottom: 10px;
+}
+.sidebar-block h3 {
+    font-weight: bold;
+    background-color: #f0f0f0;
+    padding: 8px 15px;
+}
+.sidebar-links,
+.sidebar-links table {
+    width: 100%;
+    margin: 0;
+    display: block;
+}
+.sidebar-links table tbody,
+.sidebar-links table tbody tr,
+.sidebar-links table tbody tr td {
+    display: block;
+}
+.sidebar-links > li,
+.sidebar-links > table tr {
+    margin: 0;
+    padding: 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.sidebar-links li a,
+.sidebar-links tr a {} .sidebar-links li a.active:hover,
+.sidebar-links tr a.active:hover {} .sidebar-links li a:hover,
+.sidebar-links tr a:hover {
+    background-color: #e4e4e4 !important;
+}
+.sidebar-links li a.active,
+.sidebar-links tr a.active {
+    border-left: 4px solid green;
+    background-color: #e4e4e4 !important;
+}*/
+/* produtc gallery */
+
+.product-gallery {
+    text-align: center;
+}
+.product-gallery li,
+.product-gallery > div {
+    display: inline-block;
+    margin: 10px 5px 0 5px;
+    vertical-align: top;
+    height: 250px;
+    width: 280px;
+    overflow: hidden;
+}
+/* Product popup */
+
+.popup-overlay {
+    background-color: rgba(68, 68, 68, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.product-gallery-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index:2;
+}
+.product-gallery-popup .product-popup-content {
+    position: absolute;
+    width: 980px;
+    height: 580px;
+    top: 50%;
+    left: 50%;
+    margin-left: -490px;
+    margin-top: -290px;
+    background-color: #fff;
+    overflow: hidden;
+}
+.product-information,
+.product-image {
+    float: left;
+}
+.product-information {
+    width: 28%;
+    margin: 4% 1%;
+}
+.product-image {
+    width: 60%;
+    height: 580px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+.product-image img {
+    /*    width:100%;*/
+    max-height: 100%;
+    
+}
+.cross {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.gallery-nav-btns
+{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 40px;
+    margin-top: -25px;
+}
+.gallery-nav-btns a
+{
+    display: block;
+    position: absolute;
+    width: 35px;
+    height:80px;
+    text-align: center;
+    right: 0;
+    background-image:url('../_Images/slim-arrow-sprite.png');
+    background-repeat:no-repeat;
+    opacity:0.8;
+    cursor:pointer;
+}
+.gallery-nav-btns a:hover
+{
+    opacity:1;
+}
+
+.nav-btn.prev {
+   left:0;
+    background-position:0px 0px;
+   
+}
+.nav-btn.next{
+   right:0;
+    background-position:-35px 0px;
+}
